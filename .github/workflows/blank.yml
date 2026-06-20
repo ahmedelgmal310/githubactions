@@ -12,3 +12,9 @@ jobs:
    steps:
     - name: print hellow from first workflow
       run: echo "hellow world from first workflow"
+
+    - name: checkout repositry
+      uses: actions/checkout@v7.0.0
+
+    - name: ls for dirs
+      run: ls -la
